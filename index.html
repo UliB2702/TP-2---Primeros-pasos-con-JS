@@ -13,19 +13,26 @@
 <form>
 <div class="div"> 
     <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Nota de Matematica</label>
+        <label for="exampleFormControlTextarea1" class="form-label" id="nombre1">Nota de Matematica</label>
         <textarea class="form-control" id="NotaMatematica" rows="1" required></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Nota de Lengua</label>
+        <label for="exampleFormControlTextarea1" class="form-label" id="nombre2">Nota de Lengua</label>
         <textarea class="form-control" id="NotaLengua" rows="1" required></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Nota de Efsi</label>
+        <label for="exampleFormControlTextarea1" class="form-label" id="nombre3">Nota de Efsi</label>
         <textarea class="form-control" id="NotaEFSI" rows="1" required></textarea>
       </div>
-      <div class="container" id="resultado"></div>
-      <button onclick="AnalizarValores()" type="submit" class="btn btn-primary">Submit</button>
+      <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Promedio</div>
+        <div class="card-body">
+          <h5 class="card-title">El promedio de las notas es:</h5>
+          <p class="card-text" id="resultado"><b></b></p>
+        </div>
+      </div>
+      <button onclick="Promedio(event)" type="submit" class="btn btn-primary">Sacar Promedio</button>
+      <button onclick="NumMayor(event)" type="submit" class="btn btn-primary">Sacar el numero mayor</button>
 
 </div>
 </form>
